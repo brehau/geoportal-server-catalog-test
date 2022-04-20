@@ -17,30 +17,30 @@
 
 ## Build
 
-1. Download and unzip https://github.com/Esri/geoportal-server-catalog to a local folder
+1. Download and unzip https://github.com/Esri/geoportal-server-catalog to a local folder. Or you can download and unzip the customized version of geoportal used in this repository. Cd into the downloaded folder. 
 
 2. Build the files in the geoportal folder
 
-	>>> cd "geoportal-server-catalog-master\geoportal"
-	>>> mvn clean install
+		>>> cd "geoportal"
+		>>> mvn clean install
 
 3. Build the files in the geoportal-search folder
 
-	>>> cd "geoportal-server-catalog-master\geoportal-search"
-	>>> mvn clean install
+		>>> cd "geoportal-search"
+		>>> mvn clean install
 
-4. Copy all the folder/target/*.war files built by Maven into the Tomcat 9.0/webapps folder
+4. Copy all the folder/target/*.war files built by Maven in steps 2-3 into the "Tomcat 9.0/webapps" folder
 
 ## Test
 
 1. Start the Tomcat server
 
-	>>> cd "C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin"
-	>>> startup
+		>>> cd "C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin"
+		>>> startup
 
 2. Start the ElasticSearch server
 
-	>>> "C:/Program Files/Elasticsearch/elasticsearch-7.9.3/bin/elasticsearch.bat"
+		>>> "C:/Program Files/Elasticsearch/elasticsearch-7.9.3/bin/elasticsearch.bat"
 
 3. Go to http://localhost:8080/geoportal/
 
