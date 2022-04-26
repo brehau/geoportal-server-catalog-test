@@ -1,4 +1,4 @@
-FROM maven:3-jdk-8 AS gptbuild
+FROM maven:3-jdk-11 AS gptbuild
 
 MAINTAINER David Valentine dwvalentine@usdc.edu
 
@@ -44,7 +44,7 @@ WORKDIR $CATALINA_HOME/webapps/
 #######################
 # just tomcat
 #######################
-FROM tomcat:9-jre8
+FROM tomcat:9-jre11
 
 RUN apt-get update \
  && apt-get install -y -q --no-install-recommends \
